@@ -77,3 +77,20 @@
     margin-top: 10px;
 
 }
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: #5647FF;
+    border-bottom: 3px solid #5647FF;
+    transition: .2s ease;
+
+}
+
+.active {
+    border-bottom: 3px solid #5647FF;
+}
