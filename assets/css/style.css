@@ -33,11 +33,47 @@
 }
 
 .header p a:hover {
-    color: white;
-    font-size: larger;
+    /* color: white; */
+    font-size: 16.1px;
     transition: .2s ease;
 }
 
 .header-icon {
     color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar p {
+    background-color: #5647FF;
+    width: auto;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-family: "Poppins";
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 16px;
+    font-family: "Poppins";
+    margin-top: 10px;
+
 }
