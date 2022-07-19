@@ -134,11 +134,12 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 .form {
-    width: auto;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: row;
