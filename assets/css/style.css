@@ -7,6 +7,8 @@ body {
     font-family: "Poppins";
 }
 
+/* start of navigation section */
+
 .header {
     width: 100%;
     height: 50px;
@@ -101,9 +103,9 @@ body {
 
 /* end of navigation section */
 
+
+
 /* start hero section */
-
-
 .hero-section {
     width: 100%;
     height: auto;
