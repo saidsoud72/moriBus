@@ -133,72 +133,108 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+    /* background-color: red; */
+    padding: 30px 0 30px 0;
 }
 
-.form {
+/* .hero-image{
+    width: 100%;
+    height: auto;
+} */
+.hero-image img {}
+
+/* .download-app{
+    width: 100%;
+    height: auto;
+} */
+.download-app p {
+    font-size: 18px;
+    line-height: 50px;
+    word-wrap: wrap;
+    word-spacing: 3px;
+    word-break: break-all;
+    font-weight: 600;
+    color: #868585;
+}
+
+/* end hero section */
+
+/* start why us section */
+.why {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 30px 0 30px 0;
+}
+
+.why-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 50px;
+    color: #5647FF;
+}
+
+.card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cards {
     width: 90%;
     height: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-even;
-    align-items: center;
-    border-radius: 10px;
-    padding: 10px;
-    gap: 30px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    color: #868585;
-
-}
-
-.form-input-box {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-
 }
 
-.single-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
-}
-
-.form-input {
-    width: 300px;
-    height: 30px;
-    margin-right: auto;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    font-size: 16px;
-    font-family: "Poppins";
-    text-align: center;
-}
-
-.search-btn {
-    width: 150px;
-    /* margin-right: 400px; */
+.card {
+    width: 100%;
     height: auto;
-    background-color: #5647FF;
-    text-align: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-family: "Poppins";
-    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
 }
+.desc p{
+    color: #868585;
+}
+
+/* end why us section */
+
+/* start about */
+.about{
+    width: 100%;
+    height: auto;
+    padding: 30px 0 30px 0;
+}
+.about h3{
+    font-size: 30px;
+    padding-left: 30px;
+}
+.about p{
+    font-size: 18px;
+    padding: 20px;
+}
+/* end about */
+
 
 /* start of footer section */
 .footer {
-    margin-top: 40vh;
     width: 100%;
     height: auto;
     bottom: 0;
@@ -226,14 +262,16 @@ body {
     gap: 100px;
     color: white;
 }
-.terms-conditions{
+
+.terms-conditions {
     display: flex;
     gap: 30px;
     flex-direction: column;
     font-size: 16px;
     color: white;
 }
-.address{
+
+.address {
     padding: 0px 0 20px 0;
 }
 
