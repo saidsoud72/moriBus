@@ -1,6 +1,6 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style: none;
 }
@@ -331,7 +331,6 @@ body {
 }
 
 /* end of footer section */
-
 .booking{
     height: 100px;
     background-color: blue;
