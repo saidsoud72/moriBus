@@ -1,108 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GariYangu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Title</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
+
+    <!-- start of all navigation -->
+    <!-- start blue header -->
     <header class="header">
         <p> <span><i class='bx bxs-envelope bx-sm header-icon'></i></span> <a href="#">gariyangu@moringaschool.com</a>
         </p>
         <p> <span><i class='bx bxs-phone bx-sm header-icon'></i></i></span> <a href="#">Helpline: 0712345678</a></p>
 
     </header>
+    <!-- end blue header -->
+
+    <!-- start navigation -->
     <nav class="navbar">
         <p class="logo"><i class='bx bxs-car bx-md'></i>GariYangu</p>
         <ul>
             <li class="nav-link"><a href="#" class="active">Home</a></li>
-            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
             <li class="nav-link"><a href="#">Login</a></li>
             <li class="nav-link"><a href="#">Login</a></li>
         </ul>
     </nav>
-    <!--Start of Feedback page  -->
-    <br>
-    <br>
-    <br>
-    <ul id="contact">
-        <li id="det"><img src="assets/Images/hd-letter-email-round-blue-icon-transparent-png-11637141038bsz4tzs1ur.png" style="height: 20px;"alt="Contact"> Contact Details</li>
-        <li>This Will Help Us To Contact You</li>
-    </ul>   
-    <br>
-    </div>
-    <div id="feedback">
-        <form action="submit" onsubmit="feedBack();">
-            <label for="name"><b>Enter Your Name*</b></label>
-            <input id="name" type="text" min="0" required>
-            <br>
-            <br>
-            <label for="email"><b>Enter Your Email*</b></label>
-            <input id="email" type="text" min="0" required>
-            <br>
-            <br>
-            <button id="button"type="submit">submit</button>
-        </form>      
-    </div>
-    <br>
-    <br>
-    <p class="ratings">
-        <b>Rate Your Experience</b> 
-        <br>
-        This Will Help Us Improve Your Experience
-    </p>
-    <br>
-    <br>
-    
-        <span id="bus">Bus Punctuality</span>
-            <button class= "star">&#9734;</button>  
-            <button class= "star">&#9734;</button> 
-            <button class= "star">&#9734;</button> 
-            <button class= "star">&#9734;</button> 
-            <button class= "star">&#9734;</button> 
-        <br>
-        <br>
-        <span id="rest">Restaurant Halt</span>
-            <button class= "star" id="star7">&#9734;</button>  
-            <button class= "star"id="star8">&#9734;</button> 
-            <button class= "star"id="star9">&#9734;</button> 
-            <button class= "star"id="star10">&#9734;</button> 
-            <button class= "star"id="star11">&#9734;</button>  
-        <br>
-        <br>
-        <span id="cancel">Bus Cancel</span>
-            <button class= "star bus-star" id="star12">&#9734;</button>  
-            <button class= "star bus-star" id="star13">&#9734;</button> 
-            <button class= "star bus-star" id="star14">&#9734;</button> 
-            <button class= "star bus-star" id="star15">&#9734;</button> 
-            <button class= "star bus-star" id="star16">&#9734;</button>  
-        </div>
-        <br>
-        <br>
-        <span id="quality">Bus Quality</span>
-            <button class= "star" id="star17">&#9734;</button>  
-            <button class= "star" id="star18">&#9734;</button> 
-            <button class= "star" id="star19">&#9734;</button> 
-            <button class= "star" id="star20">&#9734;</button> 
-            <button class= "star" id="star21">&#9734;</button> 
-        <br>
-        <br>
-        <span id="seat">Seat Comfort</span>
-            <button class= "star" id="star22">&#9734;</button>  
-            <button class= "star" id="star23">&#9734;</button> 
-            <button class= "star" id="star24">&#9734;</button> 
-            <button class= "star" id="star25">&#9734;</button> 
-            <button class= "star" id="star26">&#9734;</button> 
-        
+    <!-- end navigation -->
+    <!-- end of all navigation -->
 
-    <!-- Start of Footer -->
+
+    <!-- start hero section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Want to travel seamlessly?</h1>
+        <p class="hero-paragraph">Comfort and Convenience are our top priority</p>
+
+        <div class="search">
+            <div class="hero-image">
+                <img src="./assets/images/app.png" alt="man sitting on a phone">
+            </div>
+            <div class="download-app">
+                <p class="download-para">Download the best ticket booking app in Africa. Automatic Booking <br> right at
+                    the palm of your hands.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- why us section -->
+    <section class="why">
+        <h1 class="why-title">Why GariYangu?</h1>
+        <div class="card-container">
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/freelancer.png" alt="freelancer vector image">
+                    </div>
+                    <div class="desc">
+                        <h3>Comfort</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laborum dolorum explicabo
+                            voluptatem fuga, quibusdam, odit aliquam ab asperiores minima sed, atque alias sit iste
+                            quod! Soluta at est veritatis!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/freelancer.png" alt="freelancer vector image">
+                    </div>
+                    <div class="desc">
+                        <h3>Punctuality</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laborum dolorum explicabo
+                            voluptatem fuga, quibusdam, odit aliquam ab asperiores minima sed, atque alias sit iste
+                            quod! Soluta at est veritatis!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/freelancer.png" alt="freelancer vector image">
+                    </div>
+                    <div class="desc">
+                        <h3>Pricing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laborum dolorum explicabo
+                            voluptatem fuga, quibusdam, odit aliquam ab asperiores minima sed, atque alias sit iste
+                            quod! Soluta at est veritatis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end why us section -->
+
+    <!-- start about section -->
+    <section class="about" id="about">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde possimus sunt at nemo obcaecati esse iusto
+            dicta maxime! Quam, similique nisi. Voluptate sit eveniet dolor quos. Nobis, modi, voluptatum temporibus
+            repudiandae provident omnis quam laudantium sed quisquam commodi neque aspernatur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde possimus sunt at nemo obcaecati esse iusto
+            dicta maxime! Quam, similique nisi. Voluptate sit eveniet dolor quos. Nobis, modi, voluptatum temporibus
+            repudiandae provident omnis quam laudantium sed quisquam commodi neque aspernatur.</p>
+    </section>
+    <!-- end about section -->
+
+
+    <!-- start of footer section -->
     <footer class="footer">
         <div class="container">
             <div class="contact">
@@ -122,7 +132,10 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/index.js"></script>
-    
+    <!-- end of the footer section -->
+
+
+    <script src="Index.js"></script>
 </body>
+
 </html>
