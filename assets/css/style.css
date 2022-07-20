@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -210,27 +211,31 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
 }
-.desc p{
+
+.desc p {
     color: #868585;
 }
 
 /* end why us section */
 
 /* start about */
-.about{
+.about {
     width: 100%;
     height: auto;
     padding: 30px 0 30px 0;
 }
-.about h3{
+
+.about h3 {
     font-size: 30px;
     padding-left: 30px;
 }
-.about p{
+
+.about p {
     font-size: 18px;
     padding: 20px;
     color: #868585;
 }
+
 /* end about */
 
 /* start main login section */
@@ -241,53 +246,236 @@ body {
 /* start form style */
 
 
-.playappstore{   
+.playappstore {
     background-color: #D9D9D9;
     border-radius: 5px;
     display: flex;
     float: right;
     position: relative;
-  
+
     right: 5%;
     top: 65%;
 }
-.ticketing{
+
+.ticketing {
     display: flex;
     flex-direction: column;
     background-color: #D9D9D9;
-    Width:60%;
+    Width: 60%;
     height: 70%;
     border-radius: 5px;
-    box-shadow: 0px -1px 2px; 
+    box-shadow: 0px -1px 2px;
     justify-content: space-around;
     align-items: center;
-    
-    
+
+
 }
-.displayimage{ 
+
+.displayimage {
     clear: both;
     float: right;
 }
 
 
 
-   /* end form style */
+/* end form style */
 
 /* submit and print button */
-.submitbutton{
+.submitbutton {
     display: inline-flex;
 }
 
-#displayData{
+#displayData {
     background-color: #5647ff50;
-    width: 60% ;
+    width: 60%;
     height: 100%;
     border-radius: 10px;
 }
 
 
+/* start of feedback section */
+#guyicon {
+    float: right;
+    margin-right: 1%;
+    height: 150px;
+}
 
+#contact {
+    list-style: none;
+    margin-left: 2%;
+}
 
+#det {
+    font-weight: 600;
+}
+
+#feedback {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: auto;
+}
+
+#email,
+#name {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+#button {
+    width: 100%;
+    background-color: #5647FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #3615b9;
+}
+
+.ratings {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: large;
+}
+
+#ratings {
+    margin-left: 3%;
+    list-style: none;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+}
+
+#bus,
+#rest,
+#cancel,
+#quality,
+#seat {
+    margin-left: 30%;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#bus {
+    margin-right: 6%;
+}
+
+#rest {
+    margin-right: 5.7%;
+}
+
+#cancel {
+    margin-right: 9%;
+}
+
+#quality {
+    margin-right: 9%;
+}
+
+#seat {
+    margin-right: 7.2%;
+}
+
+.star {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+}
+
+.star:hover {
+    cursor: pointer;
+}
+
+.star_restaurant {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+.bus_star {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+.star_quality {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+.star_comfort {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #bus,
+    #rest,
+    #cancel,
+    #quality,
+    #seat {
+        margin-left: 1%;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 435px) {
+
+    #bus,
+    #rest,
+    #cancel,
+    #quality,
+    #seat {
+        margin-left: 0.2%;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 1%;
+
+    }
+
+    .star,
+    .star_comfort,
+    .star_quality,
+    .bus_star,
+    .star_restaurant {
+        font-size: 2rem;
+    }
+
+}
 
 
 /* start of footer section */
@@ -319,37 +507,44 @@ body {
     gap: 100px;
     color: white;
 }
-.terms-conditions{
+
+.terms-conditions {
     display: flex;
     gap: 30px;
     flex-direction: column;
     font-size: 16px;
     color: white;
 }
-.address{
+
+.address {
     padding: 0px 0 20px 0;
 }
 
 /* end of footer section */
-.booking{
+
+.booking {
     height: 100px;
     background-color: blue;
-    margin:20px;
+    margin: 20px;
     display: flex;
- 
+
 }
-#grey{
+
+#grey {
     color: blue;
 }
-.zzzz{
+
+.zzzz {
     text-align: center;
 }
-.www{
+
+.www {
     text-align: center;
-    color:darkgray;
+    color: darkgray;
     margin: 100px;
 }
-.container1{
+
+.container1 {
     display: flex;
     background-color: beige;
     margin: 50px;
