@@ -151,9 +151,14 @@ body {
 
 #displayData{
     background-color: #5647ff50;
-    width: 60% ;
+    width: 30% ;
     height: 100%;
     border-radius: 10px;
+    position: relative;
+    left: 5%;
+    padding: 2%;
+  
+
 }
 
 
