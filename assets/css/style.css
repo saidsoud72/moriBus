@@ -141,3 +141,17 @@ body {
 }
 
 
+
+   /* end form style */
+
+/* submit and print button */
+.submitbutton{
+    display: inline-flex;
+}
+
+#displayData{
+    background-color: #5647ff50;
+    width: 60% ;
+    height: 100%;
+    border-radius: 10px;
+}
