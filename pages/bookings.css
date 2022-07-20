@@ -261,4 +261,7 @@ body {
     display: flex;
     background-color: beige;
     margin: 50px;
+    box-shadow: 3px 3px 1px gray;
+    justify-content: center;
+    justify-content: space-around;
 }
