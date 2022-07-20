@@ -106,8 +106,6 @@ body {
 
 /* end of navigation section */
 
-
-
 /* start hero section */
 .hero-section {
     width: 100%;
@@ -237,6 +235,9 @@ body {
 
 /* start main login section */
 /* end main login section */
+
+
+
 /* start form style */
 
 
@@ -279,14 +280,9 @@ body {
 
 #displayData{
     background-color: #5647ff50;
-    width: 30% ;
+    width: 60% ;
     height: 100%;
     border-radius: 10px;
-    position: relative;
-    left: 5%;
-    padding: 2%;
-  
-
 }
 
 
@@ -323,8 +319,6 @@ body {
     gap: 100px;
     color: white;
 }
-
-
 .terms-conditions{
     display: flex;
     gap: 30px;
