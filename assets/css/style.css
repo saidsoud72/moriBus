@@ -109,3 +109,16 @@ body {
 /* end of navigation section */
 
 
+/* start form style */
+
+
+.playappstore{   
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    float: right;
+    position: relative;
+  
+    right: 5%;
+    top: 65%;
+}
