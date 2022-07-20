@@ -1,20 +1,23 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ticket</title>
+    <title>Title</title>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-   
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
-     <!-- start blue header -->
-     <header class="header">
+    <!-- start of all navigation -->
+    <!-- start blue header -->
+    <header class="header">
         <p> <span><i class='bx bxs-envelope bx-sm header-icon'></i></span> <a href="#">gariyangu@moringaschool.com</a>
         </p>
         <p> <span><i class='bx bxs-phone bx-sm header-icon'></i></i></span> <a href="#">Helpline: 0712345678</a></p>
@@ -26,84 +29,90 @@
     <nav class="navbar">
         <p class="logo"><i class='bx bxs-car bx-md'></i>GariYangu</p>
         <ul>
-            <li class="nav-link"><a href="#" class="active">Bus tickets</a></li>
-            <li class="nav-link"><a href="#">About Us</a></li>
-            <li class="nav-link"><a href="#">Login</a></li>
-            <li class="nav-link"><a href="#">Final page</a></li>
+            <li class="nav-link"><a href="#" class="active">Home</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="./bookings.html">Booking</a></li>
+
         </ul>
     </nav>
     <!-- end navigation -->
+    <!-- end of all navigation -->
 
-    
-    <!-- start tikceting session -->
-     
-   
-        <div class="playappstore">
-            <a href="https://play.google.com/store/games" target="_blank"><img height="50px" src="./assets/images/playstore.png" alt="playstore"></a>
-             <a href="https://www.apple.com/app-store/" target="_blank"><img src="./assets/images/appstore.png" alt="applelogo"></a>
-             <p style="color: #5647FF;" >Gari GariYangu <br> get the app</p>
+
+    <!-- start hero section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Want to travel seamlessly?</h1>
+        <p class="hero-paragraph">Comfort and Convenience are our top priority</p>
+
+        <div class="search">
+            <div class="hero-image">
+                <img src="./assets/images/app.png" alt="man sitting on a phone">
             </div>
-     <br>
-        
-        <div class="ticketing">
-            <form onsubmit="return false;" id="ticketForm">
-        
-                <label id="personName">Full Name:</label>
-                <input type="text" id="personName" placeholder="Enter full name" required> <br> <br>
-        
-                <label id="personPhone">Phone No.:</label>
-                <input type="tel" id="personPhone" placeholder="Enter phone number" required> <br> <br>
-                
-                <label id="personTicket">Ticket No.:</label>
-                <input type="text" id="personTicket" placeholder="#" required> <br> <br>
-        
-                <label id="personFrom">comingFrom:</label>
-                <input type="text" id="personFrom" placeholder="#" required> <br> <br>
-                
-                <label id="personDestination">Destination:</label>
-                <input type="text" id="personDestination" placeholder="#" required> <br> <br>
-                
-                <label id="personPrice">Ticket Price:</label>
-                <input type="number" id="personPrice" placeholder="Ksh." required> <br> <br>
-        
-                <label id="personDate">Travel Date:</label>
-                <input type="date" id="personDate" placeholder="#" required> <br> <br>
+            <div class="download-app">
+                <p class="download-para">Download the best ticket booking app in Africa. Automatic Booking <br> right at
+                    the palm of your hands.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
 
-                    
-                <!-- start submit button for the form and print icon-->
-                 <div class="submitbutton">
-                    <img width="30px" height="30px" src="./assets/images/print.png"  alt="">
-                    <input type="submit"  onclick= "formData(); " value=" submit print your ticket " style="color: #5647FF;">
-            
-                  </div>
-                 <!-- end for submit button and icon  -->
+    <!-- why us section -->
+    <section class="why">
+        <h1 class="why-title">Why GariYangu?</h1>
+        <div class="card-container">
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/freelancer.png" alt="freelancer vector image">
+                    </div>
+                    <div class="desc">
+                        <h3>Comfort</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laborum dolorum explicabo
+                            voluptatem fuga, quibusdam, odit aliquam ab asperiores minima sed, atque alias sit iste
+                            quod! Soluta at est veritatis!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/freelancer.png" alt="freelancer vector image">
+                    </div>
+                    <div class="desc">
+                        <h3>Punctuality</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laborum dolorum explicabo
+                            voluptatem fuga, quibusdam, odit aliquam ab asperiores minima sed, atque alias sit iste
+                            quod! Soluta at est veritatis!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="./assets/images/freelancer.png" alt="freelancer vector image">
+                    </div>
+                    <div class="desc">
+                        <h3>Pricing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laborum dolorum explicabo
+                            voluptatem fuga, quibusdam, odit aliquam ab asperiores minima sed, atque alias sit iste
+                            quod! Soluta at est veritatis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end why us section -->
 
-            </form>
-
-        
-        
-                   
-              
-        
-   
-        </div>     
-    
-    
-    
-  
-
-  
-    <div class="displayimage">
-        <img src="./assets/images/guy.png" alt="web display image.">
-      </div>
-      <br>
-    
-
-      <div id="displayData"></div> 
+    <!-- start about section -->
+    <section class="about" id="about">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde possimus sunt at nemo obcaecati esse iusto
+            dicta maxime! Quam, similique nisi. Voluptate sit eveniet dolor quos. Nobis, modi, voluptatum temporibus
+            repudiandae provident omnis quam laudantium sed quisquam commodi neque aspernatur.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde possimus sunt at nemo obcaecati esse iusto
+            dicta maxime! Quam, similique nisi. Voluptate sit eveniet dolor quos. Nobis, modi, voluptatum temporibus
+            repudiandae provident omnis quam laudantium sed quisquam commodi neque aspernatur.</p>
+    </section>
+    <!-- end about section -->
 
 
-
- <!-- start of footer section -->
+    <!-- start of footer section -->
     <footer class="footer">
         <div class="container">
             <div class="contact">
@@ -125,6 +134,8 @@
     </footer>
     <!-- end of the footer section -->
 
-<script src="./assets/js/index.js"></script>
+
+    <script src="Index.js"></script>
 </body>
+
 </html>
