@@ -232,8 +232,32 @@ body {
     font-size: 16px;
     color: white;
 }
+
 .address{
     padding: 0px 0 20px 0;
 }
 
 /* end of footer section */
+.booking{
+    height: 100px;
+    background-color: blue;
+    margin:20px;
+    display: flex;
+ 
+}
+#grey{
+    color: blue;
+}
+.zzzz{
+    text-align: center;
+}
+.www{
+    text-align: center;
+    color:darkgray;
+    margin: 100px;
+}
+.container1{
+    display: flex;
+    background-color: beige;
+    margin: 50px;
+}
