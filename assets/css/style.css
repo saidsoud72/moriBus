@@ -1,12 +1,16 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
     font-family: "Poppins";
     min-height: 100vh;
 }
+
+
 
 /* start of navigation section */
 
@@ -105,140 +109,61 @@ body {
 /* end of navigation section */
 
 
-
-/* start hero section */
-.hero-section {
-    width: 100%;
-    height: auto;
-    /*change to auto */
-    padding-top: 50px;
+/* start form style */
 
 
-}
-
-.hero-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.hero-paragraph {
-    color: #868585;
-    font-size: 20px;
-    text-align: center;
-}
-
-.search {
-    width: 100%;
-    height: auto;
+.playappstore{   
+    background-color: #D9D9D9;
+    border-radius: 5px;
     display: flex;
+    float: right;
+    position: relative;
+  
+    right: 5%;
+    top: 65%;
+}
+.ticketing{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    Width:60%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 0px -1px 2px; 
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    /* background-color: red; */
-    padding: 30px 0 30px 0;
+    
+    
+}
+.displayimage{ 
+    clear: both;
+    float: right;
 }
 
-/* .hero-image{
-    width: 100%;
-    height: auto;
-} */
-.hero-image img {}
 
-/* .download-app{
-    width: 100%;
-    height: auto;
-} */
-.download-app p {
-    font-size: 18px;
-    line-height: 50px;
-    word-wrap: wrap;
-    word-spacing: 3px;
-    word-break: break-all;
-    font-weight: 600;
-    color: #868585;
+
+   /* end form style */
+
+/* submit and print button */
+.submitbutton{
+    display: inline-flex;
 }
 
-/* end hero section */
-
-/* start why us section */
-.why {
-    width: 100%;
-    height: auto;
-    background-color: #f2f2f2;
-    padding: 30px 0 30px 0;
-}
-
-.why-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: capitalize;
-    padding-top: 50px;
-    color: #5647FF;
-}
-
-.card-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.cards {
-    width: 90%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.card {
-    width: 100%;
-    height: auto;
+#displayData{
+    background-color: #5647ff50;
+    width: 60% ;
+    height: 100%;
     border-radius: 10px;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-
-}
-.desc p{
-    color: #868585;
 }
 
-/* end why us section */
 
-/* start about */
-.about{
-    width: 100%;
-    height: auto;
-    padding: 30px 0 30px 0;
-}
-.about h3{
-    font-size: 30px;
-    padding-left: 30px;
-}
-.about p{
-    font-size: 18px;
-    padding: 20px;
-    color: #868585;
-}
-/* end about */
 
-/* start main login section */
-/* end main login section */
+
 
 
 /* start of footer section */
 .footer {
+    margin-top: 40vh;
     width: 100%;
     height: auto;
     bottom: 0;
@@ -266,40 +191,15 @@ body {
     gap: 100px;
     color: white;
 }
-
-.terms-conditions {
+.terms-conditions{
     display: flex;
     gap: 30px;
     flex-direction: column;
     font-size: 16px;
     color: white;
 }
-
-.address {
+.address{
     padding: 0px 0 20px 0;
 }
 
 /* end of footer section */
-.booking{
-    height: 100px;
-    background-color: blue;
-    margin:20px;
-    display: flex;
- 
-}
-#grey{
-    color: blue;
-}
-.zzzz{
-    text-align: center;
-}
-.www{
-    text-align: center;
-    color:darkgray;
-    margin: 100px;
-}
-.container1{
-    display: flex;
-    background-color: beige;
-    margin: 50px;
-}
