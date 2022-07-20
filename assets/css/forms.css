@@ -146,6 +146,38 @@ button.btn-submit:hover{
     margin-left: auto;
     padding: 30px 30px 30px 0;
 }
+.forgot a{
+    color: #5647FF;
+}
+.forgot a:hover{
+    font-weight: 600;
+}
+.remember-me{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.remember-me #remember{
+    width: 20px;
+    height: 20px;
+}
+.remember-me p{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.account p{
+    text-align: center;
+    font-size: 14px;
+}
+.account p span a{
+    color: #5647FF;
+    text-decoration: none;
+    font-weight: 600;
+}
 .login-right{
     width: 100%;
     height: 100%;
