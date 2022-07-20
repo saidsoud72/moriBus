@@ -85,7 +85,8 @@ body {
     font-weight: 600;
 
 }
-.login{
+
+.login {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -93,30 +94,44 @@ body {
     justify-content: center;
     align-items: center;
 }
-.login-left{
+
+.login-left {
     width: 100%;
     height: 100%;
     /* background-color: red; */
 
 }
-.login-left-inner{
+
+/* .login-left.signup{
+    width: 100% !important;
+    height: auto ;
+    max-height: 100vh;
+} */
+.login-left-inner {
     width: 100%;
-    height:auto;
-    padding: 30px 0 30px 30px;
+    height: auto;
+    /* padding: 30px 0 30px 30px; */
 }
-.login-left-inner p{
+
+.login-left-inner p {
     color: #868585;
     font-size: 18px;
+    text-align: center;
 }
-.form{
+.login-left-inner h2{
+    padding-left: 30px;
+}
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    padding: 30px 0 30px 30px;
+    padding-top: 30px;
+    /* padding: 30px 0 30px 30px; */
 }
-.form-input{
+
+.form-input {
     width: 500px;
     height: 40px;
     font-size: 16px;
@@ -125,7 +140,8 @@ body {
     border: 1px solid #868585;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.btn-submit{
+
+.btn-submit {
     width: 200px;
     height: 40px;
     border: none;
@@ -136,17 +152,59 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
-button.btn-submit:hover{
+
+button.btn-submit:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     background-color: #f2f2f2;
     color: #5647FF;
     transition: .2s ease;
 }
-.forgot{
+
+.forgot {
     margin-left: auto;
     padding: 30px 30px 30px 0;
 }
-.login-right{
+
+.forgot a {
+    color: #5647FF;
+}
+
+.forgot a:hover {
+    font-weight: 600;
+}
+
+.remember-me {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.remember-me #remember {
+    width: 20px;
+    height: 20px;
+}
+
+.remember-me p {
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.account p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.account p span a {
+    color: #5647FF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-right {
     width: 100%;
     height: 100%;
     background-color: #5647FF;
@@ -158,7 +216,12 @@ button.btn-submit:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
 }
-.login-right img{
+
+.login-right img {
     width: 500px;
     height: auto;
+}
+
+.login-right h2 {
+    color: #f2f2f2;
 }
