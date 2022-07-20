@@ -43,37 +43,37 @@
              <a href="https://www.apple.com/app-store/" target="_blank"><img src="./assets/images/appstore.png" alt="applelogo"></a>
              <p style="color: #5647FF;" >Gari GariYangu <br> get the app</p>
             </div>
-     <br>
+                  <br>
         
         <div class="ticketing">
-            <form onsubmit="return false;" id="ticketForm">
+            <form onSubmit="return false;" id="ticketForm">
         
-                <label id="personName">Full Name:</label>
+                <label for="personName">Full Name:</label>
                 <input type="text" id="personName" placeholder="Enter full name" required> <br> <br>
         
-                <label id="personPhone">Phone No.:</label>
+                <label for="personPhone">Phone No.:</label>
                 <input type="tel" id="personPhone" placeholder="Enter phone number" required> <br> <br>
                 
-                <label id="personTicket">Ticket No.:</label>
+                <label for="personTicket">Ticket No.:</label>
                 <input type="text" id="personTicket" placeholder="#" required> <br> <br>
         
-                <label id="personFrom">comingFrom:</label>
+                <label for="personFrom">comingFrom:</label>
                 <input type="text" id="personFrom" placeholder="#" required> <br> <br>
                 
-                <label id="personDestination">Destination:</label>
+                <label for="personDestination">Destination:</label>
                 <input type="text" id="personDestination" placeholder="#" required> <br> <br>
                 
-                <label id="personPrice">Ticket Price:</label>
+                <label for="personPrice">Ticket Price:</label>
                 <input type="number" id="personPrice" placeholder="Ksh." required> <br> <br>
         
-                <label id="personDate">Travel Date:</label>
+                <label for="personDate">Travel Date:</label>
                 <input type="date" id="personDate" placeholder="#" required> <br> <br>
 
                     
                 <!-- start submit button for the form and print icon-->
                  <div class="submitbutton">
                     <img width="30px" height="30px" src="./assets/images/print.png"  alt="">
-                    <input type="submit"  onclick= "formData(); " value=" submit print your ticket " style="color: #5647FF;">
+                    <input type="submit"  onclick="formData(); " value=" submit to print your ticket " style="color: #5647FF;">
             
                   </div>
                  <!-- end for submit button and icon  -->
@@ -99,8 +99,18 @@
       <br>
     
 
-      <div id="displayData"></div> 
+      <div class="displayData" >
+        <p id="nam"></p> <br>
+        <p id="phon"></p> <br>
+        <p id="ticke"></p> <br>
+        <p id="fro"></p> <br>
+        <p id="destinatio"></p> <br>
+        <p id="pric"></p> <br>
+        <p id="dat"></p> <br>
 
+      </div> <br>
+
+    <!-- end of ticketing session -->
 
 
  <!-- start of footer section -->
