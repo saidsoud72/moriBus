@@ -238,16 +238,13 @@ body {
 
 
 
-/* start form style */
-
-
+/* start ticketing  style section */
 .playappstore{   
     background-color: #D9D9D9;
     border-radius: 5px;
     display: flex;
     float: right;
     position: relative;
-  
     right: 5%;
     top: 65%;
 }
@@ -261,32 +258,39 @@ body {
     box-shadow: 0px -1px 2px; 
     justify-content: space-around;
     align-items: center;
-    
-    
 }
+
 .displayimage{ 
     clear: both;
     float: right;
+    box-shadow: -2px 2px 3px 2px #5647ff79;
+    position: relative;
+    right: 1%;
 }
-
-
-
-   /* end form style */
-
-/* submit and print button */
+  
+/* submit and print button start */
 .submitbutton{
     display: inline-flex;
 }
 
-#displayData{
-    background-color: #5647ff50;
-    width: 60% ;
-    height: 100%;
+.displayData{
+    background-color: #6d6d6d23;
+    width: 40% ;
+    height: max-content;
     border-radius: 10px;
+    box-shadow: -2px 2px 2px 2px #868585;
+    margin-left: 2%;
+    padding: 1%;
 }
+.displayData > p{
+    background-color: #ffffff;
+}
+/* submit and print button end */
 
 
+ 
 
+/* end ticket style section */
 
 
 
