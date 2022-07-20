@@ -35,3 +35,41 @@
     <!-- end navigation -->
 
     
+     <br>
+        
+        <div class="ticketing">
+            <form onsubmit="return false;" id="ticketForm">
+        
+                <label id="personName">Full Name:</label>
+                <input type="text" id="personName" placeholder="Enter full name" required> <br> <br>
+        
+                <label id="personPhone">Phone No.:</label>
+                <input type="tel" id="personPhone" placeholder="Enter phone number" required> <br> <br>
+                
+                <label id="personTicket">Ticket No.:</label>
+                <input type="text" id="personTicket" placeholder="#" required> <br> <br>
+        
+                <label id="personFrom">comingFrom:</label>
+                <input type="text" id="personFrom" placeholder="#" required> <br> <br>
+                
+                <label id="personDestination">Destination:</label>
+                <input type="text" id="personDestination" placeholder="#" required> <br> <br>
+                
+                <label id="personPrice">Ticket Price:</label>
+                <input type="number" id="personPrice" placeholder="Ksh." required> <br> <br>
+        
+                <label id="personDate">Travel Date:</label>
+                <input type="date" id="personDate" placeholder="#" required> <br> <br>
+
+                    
+                <!-- start submit button for the form and print icon-->
+                 <div class="submitbutton">
+                    <img width="30px" height="30px" src="./assets/images/print.png"  alt="">
+                    <input type="submit"  onclick= "formData(); " value=" submit print your ticket " style="color: #5647FF;">
+            
+                  </div>
+                 <!-- end for submit button and icon  -->
+
+            </form>
+
+        
