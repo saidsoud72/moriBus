@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'moriApp.apps.MoriappConfig',
-    'colorfield',
+    'moriAuth',
 ]
 X_FRAME_OPTIONS='SAMEORIGIN'
 

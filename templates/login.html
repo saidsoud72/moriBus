@@ -37,6 +37,11 @@
     <!-- end of all navigation -->
 
     <!-- start section login -->
+    {% if messages %}
+        {% for message in messages%}
+            <p class="text-dark mb-4 error">{{ message }}</p>
+        {% endfor%}
+    {% endif %}
     <section class="login">
         <div class="login-left">
 
@@ -45,9 +50,10 @@
                 <p>Welcome to GariYangu. Please input to start using our application</p>
             </div>
             <div class="login-left-form">
-                <form action="" class="form">
+                <form action="{% url 'moriAuth:login_user' %}" class="form" method="POST">
+                    {% csrf_token %}
                     <!-- <input type="text" name="" id=""> -->
-                    <input type="email" name="email" id="emailInput" placeholder="Email" class="form-input">
+                    <input type="text" name="username" id="usernameInput" placeholder="Username" class="form-input">
                     <input type="password" name="password" id="password" placeholder="Password" class="form-input">
                     <button type="submit" class="btn-submit">Login</button>
 
