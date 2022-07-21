@@ -20,7 +20,7 @@ function formData(){
     document.getElementById("pric").innerHTML="Ticket Price: " + price;
     document.getElementById("dat").innerHTML="Travel Date: " + date;
     
-    alert("Dear " + name+ " You have succesfully bought a ticket From gariYangu. We wish you a safe journey and appreciate your support." );
+    alert("Dear " + name+ " thankyou for choosing gariYangu, your ticket details will be displayed below the input form. We wish you a safe journey." );
 
 
     

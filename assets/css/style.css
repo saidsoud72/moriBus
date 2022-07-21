@@ -244,9 +244,10 @@ body {
     border-radius: 5px;
     display: flex;
     float: right;
+    padding: 10px;
     position: relative;
     right: 5%;
-    top: 65%;
+    top: 35%;
 }
 .ticketing{
     display: flex;
@@ -263,9 +264,11 @@ body {
 .displayimage{ 
     clear: both;
     float: right;
-    box-shadow: -2px 2px 3px 2px #5647ff79;
+    box-shadow: 2px -2px 3px 2px #5647ff79;
     position: relative;
-    right: 1%;
+    right: 2%;
+    top: 2%;
+    border-radius: 20px;
 }
   
 /* submit and print button start */
@@ -278,7 +281,7 @@ body {
     width: 40% ;
     height: max-content;
     border-radius: 10px;
-    box-shadow: -2px 2px 2px 2px #868585;
+    box-shadow: -2px 2px 2px 2px #5647ff79;
     margin-left: 2%;
     padding: 1%;
 }
@@ -286,13 +289,8 @@ body {
     background-color: #ffffff;
 }
 /* submit and print button end */
-
-
  
-
 /* end ticket style section */
-
-
 
 /* start of footer section */
 .footer {
