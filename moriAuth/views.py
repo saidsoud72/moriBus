@@ -44,4 +44,4 @@ def register_request(request):
         'register_form': form
     }
     return render(request, 'signup.html', context)
-        
+

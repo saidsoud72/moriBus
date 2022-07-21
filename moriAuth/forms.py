@@ -7,13 +7,13 @@ from django.forms.models import ModelForm
 class SignUpForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['email'].widget.attrs.update({
+        self.fields['username'].widget.attrs.update({
             'class': 'form-input',
-            'type': 'email',
-            'id': 'emailInput',
-            'aria-describedby': 'emailHelp',
-            'placeholder': 'Email',
-            'name': 'email',
+            'type': 'text',
+            'id': 'username',
+            'aria-describedby': 'usernameHelp',
+            'placeholder': 'Username',
+            'name': 'username',
         })
         self.fields['first_name'].widget.attrs.update({
             'class': 'form-input',
@@ -29,8 +29,16 @@ class SignUpForm(UserCreationForm):
             'placeholder': 'Last Name',
             'name': 'lastName',
         })
+        self.fields['email'].widget.attrs.update({
+            'class': 'form-input',
+            'type': 'email',
+            'id': 'email',
+            'aria-describedby': 'emailHelp',
+            'placeholder': 'Email Address',
+            'name': 'email',
+        })
         self.fields['password1'].widget.attrs.update({
-            'class': 'form-control form-control-user',
+            'class': 'form-input',
             'type': 'password',
             'id': 'password',
             'placeholder': 'Password',
@@ -38,7 +46,7 @@ class SignUpForm(UserCreationForm):
         })
         self.fields['password2'].widget.attrs.update({
             'class': 'form-input',
-            'type': 'repeatPassword',
+            'type': 'password',
             'id': 'repeatPassword',
             'placeholder': 'Repeat Password',
             'name': 'repeatPassword',

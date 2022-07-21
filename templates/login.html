@@ -39,7 +39,7 @@
     <!-- start section login -->
     {% if messages %}
         {% for message in messages%}
-            <p class="text-dark mb-4 error">{{ message }}</p>
+            <p class="text-dark mb-4 error" style="text-align: center; color: rgb(238, 96, 96)">{{ message }}</p>
         {% endfor%}
     {% endif %}
     <section class="login">
@@ -53,8 +53,8 @@
                 <form action="{% url 'moriAuth:login_user' %}" class="form" method="POST">
                     {% csrf_token %}
                     <!-- <input type="text" name="" id=""> -->
-                    <input type="text" name="username" id="usernameInput" placeholder="Username" class="form-input">
-                    <input type="password" name="password" id="password" placeholder="Password" class="form-input">
+                    <input type="text" name="username" id="usernameInput" placeholder="Username" class="form-input" required>
+                    <input type="password" name="password" id="password" placeholder="Password" class="form-input" required>
                     <button type="submit" class="btn-submit">Login</button>
 
                     <p class="forgot"><a href="#">Forgot Password</a></p>
