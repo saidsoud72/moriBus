@@ -42,7 +42,7 @@
     <br>
     </div>
     <div id="feedback">
-        <form action="submit" onsubmit="feedBack();">
+        <form action="submit"onsubmit="return false;">
             <label for="name"><b>Enter Your Name*</b></label>
             <input id="name" type="text" min="0" required>
             <br>
@@ -51,7 +51,7 @@
             <input id="email" type="text" min="0" required>
             <br>
             <br>
-            <button id="button"type="submit">submit</button>
+            <input id="button" onclick="onSubmission();"type="submit" value="Submit">
         </form>      
     </div>
     <br>

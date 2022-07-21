@@ -69,7 +69,10 @@ allComfort.forEach( (star,i)=> {
         })
     }
 });
-
-
+function onSubmission () {
+    var personName =  (document.getElementById("name").value);
+    var personEmail = (document.getElementById("email").value);  
+  alert ("Dear "+ personName + ", Thankyou for your feedback." );
+}
 
 
