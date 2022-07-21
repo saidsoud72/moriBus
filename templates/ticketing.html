@@ -1,46 +1,12 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Ticket</title>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-   
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-
-     <!-- start blue header -->
-     <header class="header">
-        <p> <span><i class='bx bxs-envelope bx-sm header-icon'></i></span> <a href="#">gariyangu@moringaschool.com</a>
-        </p>
-        <p> <span><i class='bx bxs-phone bx-sm header-icon'></i></i></span> <a href="#">Helpline: 0712345678</a></p>
-
-    </header>
-    <!-- end blue header -->
-
-    <!-- start navigation -->
-    <nav class="navbar">
-        <p class="logo"><i class='bx bxs-car bx-md'></i>GariYangu</p>
-        <ul>
-            <li class="nav-link"><a href="#" class="active">Bus tickets</a></li>
-            <li class="nav-link"><a href="#">About Us</a></li>
-            <li class="nav-link"><a href="#">Login</a></li>
-            <li class="nav-link"><a href="#">Final page</a></li>
-        </ul>
-    </nav>
-    <!-- end navigation -->
-
+{% extends 'base.html' %}
+{% load static %}
     
     <!-- start tikceting session -->
      
-   
+   {% block ticket %}
         <div class="playappstore">
-            <a href="https://play.google.com/store/games" target="_blank"><img height="50px" src="./assets/images/playstore.png" alt="playstore"></a>
-             <a href="https://www.apple.com/app-store/" target="_blank"><img src="./assets/images/appstore.png" alt="applelogo"></a>
+            <a href="https://play.google.com/store/games" target="_blank"><img height="50px" src="{% static './assets/images/playstore.png' %}" alt="playstore"></a>
+             <a href="https://www.apple.com/app-store/" target="_blank"><img src="{% static './assets/images/appstore.png' %}" alt="applelogo"></a>
              <p style="color: #5647FF;" >Gari GariYangu <br> get the app</p>
             </div>
      <br>
@@ -72,7 +38,7 @@
                     
                 <!-- start submit button for the form and print icon-->
                  <div class="submitbutton">
-                    <img width="30px" height="30px" src="./assets/images/print.png"  alt="">
+                    <img width="30px" height="30px" src="{% static './assets/images/print.png' %}"  alt="">
                     <input type="submit"  onclick= "formData(); " value=" submit print your ticket " style="color: #5647FF;">
             
                   </div>
@@ -94,37 +60,10 @@
 
   
     <div class="displayimage">
-        <img src="./assets/images/guy.png" alt="web display image.">
+        <img src="{% static './assets/images/guy.png' %}" alt="web display image.">
       </div>
       <br>
     
 
       <div id="displayData"></div> 
-
-
-
- <!-- start of footer section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="contact">
-                <h2 class="contact-heading">Contact Us</h2>
-                <div class="lower-contact">
-                    <p class="address">PO Box 589-00623 Email - gariyangu@enterprise.moringaschool.com</p>
-                    <p class="address">Helpline: 0712345678, 0740480364</p>
-                </div>
-            </div>
-            <div class="clear-fix"></div>
-            <div class="terms">
-                <!-- <div class="empty"></div> -->
-                <div class="terms-conditions">
-                    <p class="conditions-paragraph">Terms & Conditions Apply | Privacy Policy</p>
-                    <p class="copy">&copy; 2022 All rights reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end of the footer section -->
-
-<script src="./assets/js/index.js"></script>
-</body>
-</html>
+      {% endblock ticket %}

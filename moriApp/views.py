@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'index.html')
+
+
+def ticketing(request):
+    return render(request, 'ticketing.html')
