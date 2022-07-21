@@ -4,7 +4,7 @@ function formData(){
     
     var name = (document.getElementById("personName").value);
     var phone = (document.getElementById("personPhone").value);
-    var ticket = Math.floor(Math.random() *100000000)
+    var ticket = Math.floor(Math.random() *100000000);
     //var ticket = (document.getElementById("personTicket").value);
     var from = (document.getElementById("personFrom").value);
     var destination = (document.getElementById("personDestination").value);
@@ -20,7 +20,7 @@ function formData(){
     document.getElementById("pric").innerHTML="Ticket Price: " + price;
     document.getElementById("dat").innerHTML="Travel Date: " + date;
     
-    alert("Dear customer You have succesfully bought a ticket From gariYangu. We wish you a safe journey and appreciate your support.");
+    alert("Dear " + name+ " You have succesfully bought a ticket From gariYangu. We wish you a safe journey and appreciate your support." );
 
 
     
