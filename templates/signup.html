@@ -45,9 +45,14 @@
                 <p>Welcome to GariYangu. Please input to start using our application</p>
             </div>
             <div class="login-left-form">
-                <form action="POST" class="form" action="{% url 'moriAuth:register' %}">
+                <form action="{% url 'moriAuth:register' %}" class="form" method="POST">
                     <!-- <input type="text" name="" id=""> -->
                     {% csrf_token %}
+                    {% if messages %}
+                        {% for message in messages%}
+                            <p class="text-dark mb-4 error" style="text-align: center; color: rgb(238, 96, 96)">{{ message }}</p>
+                        {% endfor%}
+                    {% endif %}
                     {{register_form.username}}
                     {{register_form.first_name}}
                     {{register_form.last_name}}

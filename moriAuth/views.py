@@ -28,7 +28,10 @@ def login_user(request):
             return redirect(reverse('moriAuth:login_user'))
     else:
         return render(request, 'login.html', {})
-
+        
+def logout_user(request):
+    logout(request)
+    return redirect('moriAuth:login_user')
 
 def register_request(request):
     if request.method == "POST":
@@ -38,7 +41,7 @@ def register_request(request):
             return redirect(reverse('moriAuth:login_user'))
         else:
             messages.success(request, 'Error signing up, please enter valid credentials...')
-            return redirect(reverse('moriAuth:signup'))
+            return redirect(reverse('moriAuth:register'))
     form = SignUpForm()
     context = {
         'register_form': form
