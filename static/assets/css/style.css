@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    min-height: 100vh;
+}
+
+/* start of navigation section */
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #5647FF;
+    overflow: none;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+
+.header p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.header p a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+.header p a:hover {
+    /* color: white; */
+    font-size: 16.1px;
+    transition: .2s ease;
+}
+
+.header-icon {
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar p {
+    background-color: #5647FF;
+    width: auto;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-family: "Poppins";
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    font-size: 16px;
+    font-family: "Poppins";
+    margin-top: 10px;
+
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: #5647FF;
+    border-bottom: 3px solid #5647FF;
+    transition: .2s ease;
+
+}
+
+.active {
+    border-bottom: 3px solid #5647FF;
+}
+
+/* end of navigation section */
+
+/* start hero section */
+.hero-section {
+    width: 100%;
+    height: auto;
+    /*change to auto */
+    padding-top: 50px;
+
+
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.hero-paragraph {
+    color: #868585;
+    font-size: 20px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: red; */
+    padding: 30px 0 30px 0;
+}
+
+/* .hero-image{
+    width: 100%;
+    height: auto;
+} */
+.hero-image img {}
+
+/* .download-app{
+    width: 100%;
+    height: auto;
+} */
+.download-app p {
+    font-size: 18px;
+    line-height: 50px;
+    word-wrap: wrap;
+    word-spacing: 3px;
+    word-break: break-all;
+    font-weight: 600;
+    color: #868585;
+}
+
+/* end hero section */
+
+/* start why us section */
+.why {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    padding: 30px 0 30px 0;
+}
+
+.why-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 50px;
+    color: #5647FF;
+}
+
+.card-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cards {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+}
+
+.desc p {
+    color: #868585;
+}
+
+/* end why us section */
+
+/* start about */
+.about {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 30px 0;
+}
+
+.about h3 {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    padding: 20px;
+    color: #868585;
+}
+
+/* end about */
+
+/* start main login section */
+/* end main login section */
+
+
+
+/* start form style */
+
+
+.playappstore {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    float: right;
+    position: relative;
+
+    right: 5%;
+    top: 65%;
+}
+
+.ticketing {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    Width: 60%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 0px -1px 2px;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.displayimage {
+    clear: both;
+    float: right;
+}
+
+
+
+/* end form style */
+
+/* submit and print button */
+.submitbutton {
+    display: inline-flex;
+}
+
+#displayData {
+    background-color: #5647ff50;
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* start of feedback section */
+#guyicon {
+    float: right;
+    margin-right: 1%;
+    height: 150px;
+}
+
+#contact {
+    list-style: none;
+    margin-left: 2%;
+}
+
+#det {
+    font-weight: 600;
+}
+
+#feedback {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: auto;
+}
+
+#email,
+#name {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+#button {
+    width: 100%;
+    background-color: #5647FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #3615b9;
+}
+
+.ratings {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: large;
+}
+
+#ratings {
+    margin-left: 3%;
+    list-style: none;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+}
+
+#bus,
+#rest,
+#cancel,
+#quality,
+#seat {
+    margin-left: 30%;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#bus {
+    margin-right: 6%;
+}
+
+#rest {
+    margin-right: 5.7%;
+}
+
+#cancel {
+    margin-right: 9%;
+}
+
+#quality {
+    margin-right: 9%;
+}
+
+#seat {
+    margin-right: 7.2%;
+}
+
+.star {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+}
+
+.star:hover {
+    cursor: pointer;
+}
+
+.star_restaurant {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+.bus_star {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+.star_quality {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+.star_comfort {
+    font-size: 3rem;
+    display: inline;
+    background-color: unset;
+    border: none;
+    color: #ff9800;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #bus,
+    #rest,
+    #cancel,
+    #quality,
+    #seat {
+        margin-left: 1%;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 435px) {
+
+    #bus,
+    #rest,
+    #cancel,
+    #quality,
+    #seat {
+        margin-left: 0.2%;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 1%;
+
+    }
+
+    .star,
+    .star_comfort,
+    .star_quality,
+    .bus_star,
+    .star_restaurant {
+        font-size: 2rem;
+    }
+
+}
+
+
+/* start of footer section */
+.footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: #5647FF;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+.footer .container {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.contact {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 100px;
+    color: white;
+}
+
+.terms-conditions {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    font-size: 16px;
+    color: white;
+}
+
+.address {
+    padding: 0px 0 20px 0;
+}
+
+/* end of footer section */
+
+.booking {
+    height: 100px;
+    background-color: blue;
+    margin: 20px;
+    display: flex;
+
+}
+
+#grey {
+    color: blue;
+}
+
+.zzzz {
+    text-align: center;
+}
+
+.www {
+    text-align: center;
+    color: darkgray;
+    margin: 100px;
+}
+
+.container1 {
+    display: flex;
+    background-color: beige;
+    margin: 50px;
+}
