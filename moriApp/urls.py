@@ -4,4 +4,5 @@ from . import views
 app_name = 'moriApp'
 urlpatterns = [
     path('dashboard/', views.index, name='index'),
+    path('bookings/', views.booking, name='bookings'),
 ]

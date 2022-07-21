@@ -21,14 +21,14 @@ def login_user(request):
             login(request, user)
             current_user = request.user
 
-            return redirect(reverse_lazy('moriApp:index'))
+            return redirect(reverse_lazy('moriApp:bookings'))
 
         else:
             messages.success(request, f'Error logging in, please Try Again...{request.user}')
             return redirect(reverse('moriAuth:login_user'))
     else:
         return render(request, 'login.html', {})
-        
+
 def logout_user(request):
     logout(request)
     return redirect('moriAuth:login_user')

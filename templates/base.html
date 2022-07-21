@@ -32,7 +32,8 @@
         <ul>
             <li class="nav-link"><a href="#" class="active">Home</a></li>
             <li class="nav-link"><a href="#about">About</a></li>
-            <li class="nav-link"><a href="./bookings.html">login</a></li>
+            <li class="nav-link"><a href="{% url 'moriAuth:login_user' %}">login</a></li>
+            <li class="nav-link"><a href="{% url 'moriAuth:logout_user' %}">logout</a></li>
 
         </ul>
     </nav>
