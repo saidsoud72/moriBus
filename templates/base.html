@@ -30,10 +30,14 @@
     <nav class="navbar">
         <p class="logo"><i class='bx bxs-car bx-md'></i>GariYangu</p>
         <ul>
-            <li class="nav-link"><a href="#" class="active">Home</a></li>
+            <li class="nav-link"><a href="{% url 'moriAuth:index' %}" class="active">Home</a></li>
             <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="{% url 'moriApp:feedback' %}">Feedback</a></li>
+            <li class="nav-link"><a href="{% url 'moriApp:ticketing' %}">Ticket</a></li>
+            <li class="nav-link"><a href="{% url 'moriApp:bookings' %}">Booking</a></li>
             <li class="nav-link"><a href="{% url 'moriAuth:login_user' %}">login</a></li>
             <li class="nav-link"><a href="{% url 'moriAuth:logout_user' %}">logout</a></li>
+
 
         </ul>
     </nav>
@@ -42,6 +46,7 @@
     {% block content %}{% endblock content%}
     {% block ticket %}{% endblock ticket %}
     {% block booking %}{% endblock booking %}
+    {% block feedback %}{% endblock feedback%}
 
 
 

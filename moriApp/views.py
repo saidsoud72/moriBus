@@ -13,3 +13,17 @@ def booking(request):
         return render(request, 'bookings.html')
     else:
         return redirect(reverse('moriAuth:login_user'))
+
+
+def feedback(request):
+    if request.user.is_authenticated:
+        return render(request, 'feedback.html')
+    else:
+        return redirect(reverse('moriAuth:login_user'))
+
+
+def ticketing(request):
+    if request.user.is_authenticated:
+        return render(request, 'ticketing.html')
+    else:
+        return redirect(reverse('moriAuth:login_user'))

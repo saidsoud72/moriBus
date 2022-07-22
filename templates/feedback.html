@@ -1,42 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GariYangu</title>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/feedback.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <header class="header">
-        <p> <span><i class='bx bxs-envelope bx-sm header-icon'></i></span> <a href="#">gariyangu@moringaschool.com</a>
-        </p>
-        <p> <span><i class='bx bxs-phone bx-sm header-icon'></i></i></span> <a href="#">Helpline: 0712345678</a></p>
+{% extends 'base.html' %}
+{% load static %}
 
-    </header>
-    <nav class="navbar">
-        <p class="logo"><i class='bx bxs-car bx-md'></i>GariYangu</p>
-        <ul>
-            <li class="nav-link"><a href="#" class="active">Home</a></li>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Login</a></li>
-            <li class="nav-link"><a href="#">Login</a></li>
-        </ul>
-    </nav>
+{%block feedback %}
     <!--Start of Feedback page  -->
     <br>
     <br>
-    <img id="guyicon" src="assets/Images/guy.png" alt="Pageicon">
+    <img id="guyicon" src="{% static 'assets/Images/guy.png' %}" alt="Pageicon">
     <br>
     <br>
     <br>
     <ul id="contact">
-        <li id="det"><img src="assets/Images/hd-letter-email-round-blue-icon-transparent-png-11637141038bsz4tzs1ur.png" style="height: 20px;"alt="Contact"> Contact Details</li>
+        <li id="det"><img src="{% static 'assets/Images/hd-letter-email-round-blue-icon-transparent-png-11637141038bsz4tzs1ur.png' %}" style="height: 20px;"alt="Contact"> Contact Details</li>
         <li>This Will Help Us To Contact You</li>
     </ul>   
     <br>
@@ -105,29 +79,5 @@
             <button class= "star_comfort">&#9734;</button>
             <br>
             <!-- end of feedback page -->
-        
+        {% endblock feedback %}
 
-    <!-- Start of Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="contact">
-                <h2 class="contact-heading">Contact Us</h2>
-                <div class="lower-contact">
-                    <p class="address">PO Box 589-00623 Email - gariyangu@enterprise.moringaschool.com</p>
-                    <p class="address">Helpline: 0712345678, 0740480364</p>
-                </div>
-            </div>
-            <div class="clear-fix"></div>
-            <div class="terms">
-                <!-- <div class="empty"></div> -->
-                <div class="terms-conditions">
-                    <p class="conditions-paragraph">Terms & Conditions Apply | Privacy Policy</p>
-                    <p class="copy">&copy; 2022 All rights reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/feedback.js"></script>
-    
-</body>
-</html>
