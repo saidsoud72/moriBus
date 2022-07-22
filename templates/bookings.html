@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+    <!--start soud--->
+
+    {% block booking %}
+    <div class="zzzz">
+        <h1>What to travel seamlessly?</h1>
+        <h2 id="grey">Comfort and convenience is our top priority</h2>
+    </div>
+    <div class="container1">
+        <div>
+            <img src="https://www.mybus.co.ke/img/theme46/city-icon.png" alt="cir">
+            <p>From</p>
+            <select>
+                <option value="nyeri">nyeri</option>
+                <option value="Kisumu"> kisumu</option>
+                <option value="mombasa">mombasa</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="kabete">kabete </option>
+            </select> <br>
+            <span>Pick-up station</span>
+        </div>
+
+        <div>
+            <img src="https://www.mybus.co.ke/img/theme46/city-icon.png" alt="cir">
+
+            <p>To</p>
+            <select>
+                <option value="Kisumu">kisumu</option>
+                <option value="nyeri"> Nyeri</option>
+                <option value="mombasa">mombasa</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="kabete">kabete </option>
+            </select> <br>
+            <span>Select Destination</span>
+        </div>
+
+        <div>
+
+            <img src="https://www.mybus.co.ke/img/theme46/calr-icon.png" alt="date">
+            <label for="date">TravellingDate</label> <br>
+            <input type="date" id="date" name="date">
+
+        </div>
+
+
+        <div>
+            <input type="button" value="Search">
+        </div>
+
+
+    </div>
+
+    <P class="www"> No Search Yet!</P>
+
+    <!-- end navigation soud -->
+    {% endblock booking %}
+    
+<!-- <div class="trial"> -->

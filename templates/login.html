@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Title</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/forms.css' %}" />
+</head>
+
+<body>
+
+    <!-- start of all navigation -->
+    <!-- start blue header -->
+    <header class="header">
+        <p> <span><i class='bx bxs-envelope bx-sm header-icon'></i></span> <a href="#">gariyangu@moringaschool.com</a>
+        </p>
+        <p> <span><i class='bx bxs-phone bx-sm header-icon'></i></i></span> <a href="#">Helpline: 0712345678</a></p>
+
+    </header>
+    <!-- end blue header -->
+
+    <!-- start navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <p><span><i class='bx bxs-car bx-md'></i></span> GariYangu</p>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    <!-- end navigation -->
+    <!-- end of all navigation -->
+
+    <!-- start section login -->
+    
+    <section class="login">
+        <div class="login-left">
+
+            <div class="login-left-inner">
+                <h2>Login</h2>
+                <p>Welcome to GariYangu. Please input to start using our application</p>
+            </div>
+            <div class="login-left-form">
+                <form action="{% url 'moriAuth:login_user' %}" class="form" method="POST">
+                    {% csrf_token %}
+                    {% if messages %}
+                        {% for message in messages%}
+                            <p class="text-dark mb-4 error" style="text-align: center; color: rgb(238, 96, 96)">{{ message }}</p>
+                         {% endfor%}
+                    {% endif %}
+                    <!-- <input type="text" name="" id=""> -->
+                    <input type="text" name="username" id="usernameInput" placeholder="Username" class="form-input" required>
+                    <input type="password" name="password" id="password" placeholder="Password" class="form-input" required>
+                    <button type="submit" class="btn-submit">Login</button>
+
+                    <p class="forgot"><a href="#">Forgot Password</a></p>
+                </form>
+            </div>
+            <hr>
+
+            <div class="remember-me">
+                <input type="checkbox" name="remember" id="remember">
+                <p>Remember me</p>
+            </div>
+
+            <div class="account">
+                <p>Don't have an account? <span><a href="{% url 'moriAuth:register' %}">Sign Up</a></span></p>
+            </div>
+        </div>
+        <div class="login-right">
+            <img src="{% static './assets/images/our-app.png' %}" alt="our app image">
+        </div>
+    </section>
+    <!-- end section login -->
+
+
+    
+
+
+    <script src="{% static 'Index.js' %}"></script>
+</body>
+
+</html>

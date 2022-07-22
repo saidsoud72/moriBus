@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+    
+    <!-- start tikceting session -->
+     
+   {% block ticket %}
+        <div class="playappstore">
+            <a href="https://play.google.com/store/games" target="_blank"><img height="50px" src="{% static './assets/images/playstore.png' %}" alt="playstore"></a>
+             <a href="https://www.apple.com/app-store/" target="_blank"><img src="{% static './assets/images/appstore.png' %}" alt="applelogo"></a>
+             <p style="color: #5647FF;" >Gari GariYangu <br> get the app</p>
+            </div>
+     <br>
+        
+        <div class="ticketing">
+            <form onsubmit="return false;" id="ticketForm">
+        
+                <label id="personName">Full Name:</label>
+                <input type="text" id="personName" placeholder="Enter full name" required> <br> <br>
+        
+                <label id="personPhone">Phone No.:</label>
+                <input type="tel" id="personPhone" placeholder="Enter phone number" required> <br> <br>
+                
+                <label id="personTicket">Ticket No.:</label>
+                <input type="text" id="personTicket" placeholder="#" required> <br> <br>
+        
+                <label id="personFrom">comingFrom:</label>
+                <input type="text" id="personFrom" placeholder="#" required> <br> <br>
+                
+                <label id="personDestination">Destination:</label>
+                <input type="text" id="personDestination" placeholder="#" required> <br> <br>
+                
+                <label id="personPrice">Ticket Price:</label>
+                <input type="number" id="personPrice" placeholder="Ksh." required> <br> <br>
+        
+                <label id="personDate">Travel Date:</label>
+                <input type="date" id="personDate" placeholder="#" required> <br> <br>
+
+                    
+                <!-- start submit button for the form and print icon-->
+                 <div class="submitbutton">
+                    <img width="30px" height="30px" src="{% static './assets/images/print.png' %}"  alt="">
+                    <input type="submit"  onclick= "formData(); " value=" submit print your ticket " style="color: #5647FF;">
+            
+                  </div>
+                 <!-- end for submit button and icon  -->
+
+            </form>
+
+        
+        
+                   
+              
+        
+   
+        </div>     
+    
+    
+    
+  
+
+  
+    <div class="displayimage">
+        <img src="{% static './assets/images/guy.png' %}" alt="web display image.">
+      </div>
+      <br>
+    
+
+      <div id="displayData"></div> 
+      {% endblock ticket %}
