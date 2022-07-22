@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
-     <!-- start blue header -->
-     <header class="header">
+    <!-- start blue header -->
+    <header class="header">
         <p> <span><i class='bx bxs-envelope bx-sm header-icon'></i></span> <a href="#">gariyangu@moringaschool.com</a>
         </p>
         <p> <span><i class='bx bxs-phone bx-sm header-icon'></i></i></span> <a href="#">Helpline: 0712345678</a></p>
@@ -26,73 +28,77 @@
     <nav class="navbar">
         <p class="logo"><i class='bx bxs-car bx-md'></i>GariYangu</p>
         <ul>
-            <li class="nav-link"><a href="#" class="active">Home</a></li>
-            <li class="nav-link"><a href="#">About Us</a></li>
-            <li class="nav-link"><a href="#">Login</a></li>
-            <li class="nav-link"><a href="#">Final page</a></li>
+            <li class="nav-link"><a href="index.html" class="active">Home</a></li>
+            <li class="nav-link"><a href="login.html">Login</a></li>
+            <li class="nav-link"><a href="feedback.html">Feedback</a></li>
+            <li class="nav-link"><a href="#">Ticket</a></li>
+            <li class="nav-link"><a href="./bookings.html">Booking</a></li>
         </ul>
     </nav>
     <!-- end navigation -->
 
-    
+
     <!-- start tikceting session -->
-     
-   
+
+
     <div class="displayimage">
         <img src="./assets/images/guy.png" alt="web display image.">
-      </div>
-       <br>
-        
-        <div class="ticketing">
-            <form onSubmit="return false;" id="ticketForm">
-        
-                <label for="personName">Full Name:</label>
-                <input type="text" id="personName" placeholder="Enter full name" required> <br> <br>
-        
-                <label for="personPhone">Phone No:</label>
-                <input type="tel" id="personPhone" placeholder="Enter phone number" required> <br> <br>
-                
-                <label for="personTicket">Ticket No:(automatically generated)</label>
-                <input type="hidden" id="personTicket" placeholder="" required> <br> <br>
-        
-                <label for="personFrom">comingFrom:</label>
-                <input type="text" id="personFrom" placeholder="#" required> <br> <br>
-                
-                <label for="personDestination">Destination:</label>
-                <input type="text" id="personDestination" placeholder="#" required> <br> <br>
-             
-                <label for="personPrice">Ticket Price:</label>
-                <input type="number" id="personPrice" placeholder="Ksh." required> <br> <br>
-        
-                <label for="personDate">Travel Date:</label>
-                <input type="date" id="personDate" placeholder="#" required> <br> <br>
+    </div>
+    <br>
 
-                    
-                <!-- start submit button for the form and print icon-->
-                 <div class="submitbutton">
-                    <img width="30px" height="30px" src="./assets/images/print.png"  alt="">
-                    <input type="submit"  onclick="formData(); " value=" submit to print your ticket " style="color: #5647FF;">
-            
-                  </div>
-                 <!-- end for submit button and icon  -->
+    <div class="ticketing">
+        <form onSubmit="return false;" id="ticketForm">
 
-            </form>        
-           
-        </div>     
-    
-    
-        <div class="playappstore">
-            <a href="https://play.google.com/store/games" target="_blank"><img height="50px" src="./assets/images/playstore.png" alt="playstore"></a>
-             <a href="https://www.apple.com/app-store/" target="_blank"><img src="./assets/images/appstore.png" alt="applelogo"></a>
-             <p style="color: #5647FF;" >Gari GariYangu <br> get the app</p>
+            <label for="personName">Full Name:</label>
+            <input type="text" id="personName" placeholder="Enter full name" required> <br> <br>
+
+            <label for="personPhone">Phone No:</label>
+            <input type="tel" id="personPhone" placeholder="Enter phone number" required> <br> <br>
+
+            <label for="personTicket">Ticket No:(automatically generated)</label>
+            <input type="hidden" id="personTicket" placeholder="" required> <br> <br>
+
+            <label for="personFrom">comingFrom:</label>
+            <input type="text" id="personFrom" placeholder="#" required> <br> <br>
+
+            <label for="personDestination">Destination:</label>
+            <input type="text" id="personDestination" placeholder="#" required> <br> <br>
+
+            <label for="personPrice">Ticket Price:</label>
+            <input type="number" id="personPrice" placeholder="Ksh." required> <br> <br>
+
+            <label for="personDate">Travel Date:</label>
+            <input type="date" id="personDate" placeholder="#" required> <br> <br>
+
+
+            <!-- start submit button for the form and print icon-->
+            <div class="submitbutton">
+                <img width="30px" height="30px" src="./assets/images/print.png" alt="">
+                <input type="submit" onclick="formData(); " value=" submit to print your ticket "
+                    style="color: #5647FF;">
+
             </div>
-  
+            <!-- end for submit button and icon  -->
 
-  
-      <br>
-    
+        </form>
 
-      <div class="displayData" >
+    </div>
+
+
+    <div class="playappstore">
+        <a href="https://play.google.com/store/games" target="_blank"><img height="50px"
+                src="./assets/images/playstore.png" alt="playstore"></a>
+        <a href="https://www.apple.com/app-store/" target="_blank"><img src="./assets/images/appstore.png"
+                alt="applelogo"></a>
+        <p style="color: #5647FF;">Gari GariYangu <br> get the app</p>
+    </div>
+
+
+
+    <br>
+
+
+    <div class="displayData">
         <p id="nam"></p> <br>
         <p id="phon"></p> <br>
         <p id="ticke"></p> <br>
@@ -101,12 +107,12 @@
         <p id="pric"></p> <br>
         <p id="dat"></p> <br>
 
-      </div> <br>
+    </div> <br>
 
     <!-- end of ticketing session -->
 
 
- <!-- start of footer section -->
+    <!-- start of footer section -->
     <footer class="footer">
         <div class="container">
             <div class="contact">
@@ -128,6 +134,7 @@
     </footer>
     <!-- end of the footer section -->
 
-<script src="./assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
